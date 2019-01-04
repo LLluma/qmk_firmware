@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+-------  -------+------+------+------+------+------|
  * |      |   !  |   @  |   (  |   )  |   |  |  |      |      |      |      |      |  F12 |
  * |------+------+------+------+------+-------  -------+------+------+------+------+------|
- * |      |   #  |   $  |   [  |   ]  |   `  |  | Left | Down |  Up  |Right |      |      |
+ * |      | TMUX |   $  |   [  |   ]  |   `  |  | Left | Down |  Up  |Right |      |      |
  * |------+------+------+------+------+------|  |------+------+------+------+------+------|
  * | APscr|   %  |   ^  |   {  |   }  |   ~  |  |      |      |      |      | Vol- | Vol+ |
  * |------+------+------+------+------+------+  +------+------+------+------+------+------|
@@ -51,11 +51,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------`  `-----------------------------------------'
  */
 [SYMB] = LAYOUT( \
-    KC_CAPS,        KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,    KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11, \
-    _______,        KC_EXLM, KC_AT,   KC_LPRN, KC_RPRN, KC_PIPE,  _______, _______, _______, _______, _______, KC_F12, \
-    _______,        KC_HASH, KC_DLR,  KC_LBRC, KC_RBRC, KC_GRV,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______, \
-    M(PSCREEN_APP), KC_PERC, KC_CIRC, KC_LCBR, KC_RCBR, KC_TILD,  _______, _______, _______, KC_BSLS, KC_VOLD, KC_VOLU, \
-    KC_PSCR,        _______, _______, _______, _______, _______,  _______, _______, _______, KC_MPRV, KC_MNXT, KC_MPLY \
+    KC_CAPS,        KC_F1,      KC_F2,   KC_F3,   KC_F4,   KC_F5,    KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11, \
+    _______,        KC_EXLM,    KC_AT,   KC_LPRN, KC_RPRN, KC_PIPE,  _______, _______, _______, _______, _______, KC_F12, \
+    _______,        LCTL(KC_B), KC_DLR,  KC_LBRC, KC_RBRC, KC_GRV,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______, \
+    M(PSCREEN_APP), KC_PERC,    KC_CIRC, KC_LCBR, KC_RCBR, KC_TILD,  _______, _______, _______, KC_BSLS, KC_VOLD, KC_VOLU, \
+    KC_PSCR,        _______,    _______, _______, _______, _______,  _______, _______, _______, KC_MPRV, KC_MNXT, KC_MPLY \
 ),
 
 /* Vim Movement (Hold down F)

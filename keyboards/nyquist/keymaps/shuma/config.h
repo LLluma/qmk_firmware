@@ -6,6 +6,7 @@
 
 #define USE_SERIAL
 #define MASTER_LEFT
+//#define MASTER_RIGHT
 
 #undef  TAPPING_TERM
 #define TAPPING_TERM 150

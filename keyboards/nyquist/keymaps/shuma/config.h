@@ -5,8 +5,8 @@
 #include "333fred_config.h"
 
 #define USE_SERIAL
-#define MASTER_LEFT
-//#define MASTER_RIGHT
+//#define MASTER_LEFT
+#define MASTER_RIGHT
 
 #undef  TAPPING_TERM
 #define TAPPING_TERM 150
